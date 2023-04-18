@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #5E3BEE;
+    --secondary-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a.active {
+    color: var(--primary-color);
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+button a {
+    color: var(--primary-color);
+}
+
+.contact-button {
+    width: 8rem;
+}
+
+.header-container {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo img {
+    width: 200px;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .header .logo img {
+        width: 150px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
