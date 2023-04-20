@@ -1,718 +1,821 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-    --primary-color: #5E3BEE;
-    --secondary-color: #000;
-    --primary-font: 'Roboto', sans-serif;
+  --primary-color: #5e3bee;
+  --secondary-color: #000;
+  --primary-font: "Roboto", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: var(--primary-font);
-    margin: 0;
-    padding: 0;
-    color: var(--secondary-color);
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
 }
 
 a {
-    text-decoration: none;
-    color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 a.active {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 button {
-    cursor: pointer;
-    border: 1px solid var(--primary-color);
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
 }
 
 button a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .contact-button {
-    width: 8rem;
+  width: 8rem;
 }
 
 .header-container {
-    background-color: #fff;
-    padding: 20px 0;
+  background-color: #fff;
+  padding: 20px 0;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1em;
-    margin-left: 3em;
-    margin-right: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .header .logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
 }
 
 .main-conteiner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    left: 0px;
-    top: 2em;
-    padding: 8em;
-    background: #F5FCFF;
-    color: #282938;
-}
-
-.main-left {
-    width: 60%;
-}
-
-.main-right {
-    width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  left: 0px;
+  top: 2em;
+  padding: 8em;
+  background: #f5fcff;
+  color: #282938;
 }
 
 .name {
-    width: 7em;
-    height: 0.125em;
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 1em;
-    text-align: left;
-    color: #282938;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 1em;
+  text-align: left;
+  color: #282938;
 }
 
 .title-main {
-    margin-top: 0.5em;
-    width: 15em;
-    height: 2.5em;
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 4.5em;
-    color: #282938;
+  margin-top: 0.5em;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: #282938;
 }
 
 .description-main {
-    margin-top: 3em;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1.5em;
-    color: #1C1E53;
+  margin-top: 3em;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #1c1e53;
 }
 
 .touch-button {
-    margin-top: 2.5em;
-    background-color: #5E3BEE;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 2.5em;
+  background-color: #5e3bee;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .skillsDiv {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-inner {
-    width: 90%;
+  width: 90%;
 }
 
 .myskills {
-    margin-top: 5em;
-    margin-bottom: 1.333125em;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 150%;
+  margin-top: 5em;
+  margin-bottom: 1.333125em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 150%;
+}
+
+.expertise {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 120%;
 }
 
 .myexpertise {
-    margin-bottom: 2em;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 3em;
-    line-height: 120%;
+  margin-bottom: 2em;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 120%;
 }
 
 .box-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .box {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 32px;
-    gap: 32px;
-    background: #F5FCFF;
-    border-bottom: 4px solid #5E3BEE;
-    border-radius: 10.6667px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f5fcff;
+  border-bottom: 4px solid transparent;
+  border-radius: 10.6667px;
+}
+
+.box:hover {
+  border-bottom: 4px solid #5e3bee;
 }
 
 .box-title {
-    width: 341.33px;
-    height: 45px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 140%;
-    color: #282938;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #282938;
 }
 
 .box-description {
-    width: 341.33px;
-    height: 128px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21.3333px;
-    line-height: 150%;
-    color: #1C1E53;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.3333px;
+  line-height: 150%;
+  color: #1c1e53;
 }
 
 .aboutme {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    left: 0px;
-    top: 2em;
-    width: 100%;
-    padding: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0px;
+  top: 2em;
+  width: 100%;
+  padding: 3em;
+  margin-top: 5em;
 }
 
---------
-
 .portfolioDiv {
-    margin-top: 3em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
 }
 
 .portfolio-inner {
-    width: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
 }
 
 .recent-projects {
-    margin-top: 9.375em;
-    margin-bottom: 1.333125em;
-    font-family: "Roboto";
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 150%;
+  margin-bottom: 1.333125em;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .portfolio {
-    margin-bottom: 2.25em;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 3em;
-    line-height: 120%;
+  margin-bottom: 2.25em;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 120%;
 }
 
 .social-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8em 1.2em;
-    gap: 2em;
-    color: white;
-    width: 15em;
-    height: 4.5em;
-    background: #E62872;
-    border-color: #E62872;
-    border-radius: 0.5em;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 1.2em;
+  gap: 2em;
+  color: white;
+  width: 15em;
+  height: 4.5em;
+  background: #e62872;
+  border-color: #e62872;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: 1em;
 }
 
 .social-button img {
-    width: 2em;
-    height: 2em;
+  width: 2em;
+  height: 2em;
 }
 
-
 .card-conteiner {
-    margin-top: 5em;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2.5em;
-    background: #f5fcff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card-inner {
-    width: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 34em;
-    height: 40em;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
 }
 
 .card-image {
-    width: 15em;
-    height: 25em;
-    border-radius: 0.5em;
-    transform: scale(0.3);
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.card-img {
+  width: 100%;
 }
 
 .card-frame {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2em;
-    gap: 2em;
-    width: 35em;
-    height: 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+  gap: 2em;
+  width: 100%;
+}
+
+.arrow {
+  height: 1em;
+  width: 1em;
 }
 
 .card-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 0.5em;
-    width: 30em;
-    height: 7.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 0.5em;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 140%;
 }
 
 .card-description {
-    width: 30.5em;
-    height: 4em;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.5em;
-    color: #1C1E53;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #1c1e53;
 }
 
 .card-detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 1em;
-    width: 10em;
-    height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1em;
+  width: 100%;
 }
 
-.card-detail-left {
-    width: 10em;
-    height: 1.75em;
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 1.5em;
-    color: #000000;
+.detail-inner {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  width: 30%;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .card-detail-right {
-    width: 16px;
-    height: 16px;
-    border: 2.66667px solid #000000;
+  width: 16px;
+  height: 16px;
+  border: 2.66667px solid #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .testimonialsDiv {
-    margin-top: 30em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #f5fcff;
+  margin-top: 5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5fcff;
 }
 
 .testimonialsInner {
-    width: 90%;
+  width: 90%;
 }
 
 .reviews {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2.5em;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
 }
 
 .feedback {
-    margin-top: 9.375em;
-    margin-bottom: 1.333125em;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 150%;
+  margin-top: 4em;
+  margin-bottom: 1.333125em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .testimonial {
-    margin-bottom: 2.25em;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3em;
-    line-height: 120%;
+  margin-bottom: 2.25em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 120%;
 }
 
 .testimonialSingle {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2.666875em;
-    gap: 2.666875em;
-    border: 0.083333125em solid #006b6a;
-    border-radius: 0.5rem;
-    margin-bottom: 9.375em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.666875em;
+  gap: 2.666875em;
+  border: 0.083333125em solid #006b6a;
+  border-radius: 0.5rem;
+  margin-bottom: 9.375em;
 }
 
 .testimonialP {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 150%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .personDiv {
-    display: flex;
-    flex-direction: row;
-    gap: 1.333125em;
+  display: flex;
+  flex-direction: row;
+  gap: 1.333125em;
 }
 
 .personNameP {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 150%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .personDescP {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 150%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .personImg {
-    height: 4.666875em;
+  height: 4.666875em;
 }
 
 .contactForm {
-    width: 100%;
+  width: 100%;
 }
 
 .contactFormInner {
-    width: 53%;
-    display: flex;
-    flex-direction: column;
+  width: 53%;
+  display: flex;
+  flex-direction: column;
 }
 
 .touchP {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 1.25em;
-    margin-top: 8em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 1.25em;
+  margin-top: 8em;
 }
 
 .contactTitle {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3em;
-    line-height: 120%;
-    text-align: center;
-    color: #282938;
-    margin-bottom: 1em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 120%;
+  text-align: center;
+  color: #282938;
+  margin-bottom: 1em;
 }
 
 .contactDesc {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125em;
-    line-height: 150%;
-    text-align: center;
-    color: #1c1e53;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 150%;
+  text-align: center;
+  color: #1c1e53;
 }
 
 .inputVar1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em;
-    width: 31em;
-    height: 4em;
-    background: #ffffff;
-    border: 0.083333125em solid #5e3bee;
-    border-radius: 0.5em;
-    margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  height: 4em;
+  background: #ffffff;
+  border: 0.083333125em solid #5e3bee;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
 }
 
 .inputVar1:focus {
-    outline: none;
+  outline: none;
 }
 
 .formRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
 }
 
 .formRowSingle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .formDiv {
-    margin-top: 4em;
-    display: flex;
-    flex-direction: column;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
 }
 
 .labelForm {
-    margin-bottom: 0.666875em;
+  margin-bottom: 0.666875em;
 }
 
 .inputVar2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em;
-    width: 64em;
-    height: 4em;
-    background: #ffffff;
-    border: 0.083333125em solid #5e3bee;
-    border-radius: 0.5em;
-    margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  height: 4em;
+  background: #ffffff;
+  border: 0.083333125em solid #5e3bee;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
 }
 
 .inputVar3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em;
-    width: 64em;
-    height: 15em;
-    background: #ffffff;
-    border: 0.083333125em solid #5e3bee;
-    border-radius: 0.5em;
-    margin-bottom: 2em;
-    resize: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  height: 15em;
+  background: #ffffff;
+  border: 0.083333125em solid #5e3bee;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  resize: none;
 }
 
 .inputVar3::placeholder {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 150%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
 }
 
 .checkBoxForm {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .checkInner {
-    display: flex;
-    flex-direction: row;
-    width: 53em;
-    gap: 0.666875em;
+  display: flex;
+  flex-direction: row;
+  width: 53em;
+  gap: 0.666875em;
 }
 
 .contactBtn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1.16666875em 2.66666875em;
-    gap: 0.666875em;
-    width: 10.666875em;
-    height: 4.333125em;
-    background: #5e3bee;
-    border-radius: 0.5rem;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #FFFFFF;
-    line-height: 150%;
-    border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.16666875em 2.66666875em;
+  gap: 0.666875em;
+  width: 10.666875em;
+  height: 4.333125em;
+  background: #5e3bee;
+  border-radius: 0.5rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 150%;
+  border: 1px solid transparent;
 }
 
 .btnDiv {
-    margin-top: 3.166875em;
-    width: 100%;
-    margin-bottom: 10.520625em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  margin-top: 3.166875em;
+  width: 100%;
+  margin-bottom: 10.520625em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer {
-    width: 100%;
-    background-color: #f5fcff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100%;
+  background-color: #f5fcff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footerLower {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2.625em 0em 6.6em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2.625em 0em 6.6em 0em;
 }
 
 .footerLowerTerms {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
 .footerUpper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 6.5em;
-    padding-bottom: 6.5em;
-    border-bottom: 0.083125em solid rgba(40, 41, 56, 0.55);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.5em;
+  padding-bottom: 6.5em;
+  border-bottom: 0.083125em solid rgba(40, 41, 56, 0.55);
 }
 
 .footerLogo {
-    height: 2.5em;
+  height: 2.5em;
 }
 
 .footerNavs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2.625em;
+  display: flex;
+  align-items: center;
+  gap: 2.625em;
 }
 
 .footerInner {
-    width: 91%;
+  width: 91%;
 }
 
 .footerIcons {
-    display: flex;
-    gap: 1.5em;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  gap: 1.5em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .footerIcon {
-    height: 1.5em;
-    width: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .airDokan {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footerP {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .termsP {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 @media screen and (max-width: 768px) {
+  .header .logo img .main-conteiner .footerUpper,
+  .footerLower,
+  .footerIcons,
+  .footerLowerTerms,
+  .footerLower,
+  .footerNavs {
+    width: 150px;
+  }
 
-    .header .logo img .main-conteiner .footerUpper,
-    .footerLower,
-    .footerIcons,
-    .footerLowerTerms,
-    .footerLower,
-    .footerNavs {
-        width: 150px;
-    }
+  .header {
+    flex-direction: column;
+  }
 
-    .header {
-        flex-direction: column;
-    }
+  .header nav {
+    flex-direction: column;
+    padding: 20px 0;
+  }
 
-    .header nav {
-        flex-direction: column;
-        padding: 20px 0;
-    }
+  .main-conteiner {
+    flex-direction: column;
+  }
 
-    .main-conteiner {
-        flex-direction: column;
-    }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footerLogo {
+    width: 10em;
+  }
+}
 
-    .footerLogo {
-        width: 10em;
-    }
+@media screen and (max-width: 1280px) {
+  .title-main {
+    font-size: 2.5em;
+  }
+  .box {
+    padding: 1em;
+    gap: 1em;
+  }
+  .box-container {
+    gap: 1em;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .title-main {
+    font-size: 4.5em;
+  }
+  .box {
+    padding: 2em;
+    gap: 2em;
+  }
+  .box-container {
+    gap: 2.5em;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+  .box {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    width: 22.5%;
+  }
+  .main-left {
+    width: 60%;
+  }
+  .main-right {
+    width: 35%;
+  }
+
+  .right-image {
+    width: 120%;
+  }
+  .aboutme{
+    flex-direction: row;
+  }
+  .aboutmeImg{
+    width: 60%;
+  }
+  .card-inner{
+    flex-direction: row;
+  }
+  .card{
+    width: 30%;
+  }
+  .reviews{
+    flex-direction: row;
+  }
+  .inputVar1{
+    width: 31em;
+  }
+  .inputVar2,.inputVar3{
+    width: 64em;
+  }
+  .checkInner{
+    justify-content: start;
+  }
+  .footerNavs,.footerUpper{
+    flex-direction: row;
+  }
+  .footerUpper{
+    align-items: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-left {
+    width: 100%;
+  }
+  .main-right {
+    width: 100%;
+  }
+
+  .right-image {
+    width: 100%;
+  }
+  .aboutme{
+    flex-direction: column;
+  }
+  .aboutmeImg{
+    width: 100%;
+  }
+  .card-inner{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+  }
+  .reviews{
+    flex-direction: column;
+  }
+  .inputVar1,.inputVar2,.inputVar3{
+    width: 100%;
+  }
+  .checkInner{
+    justify-content: center;
+  }
+  .footerNavs,.footerUpper{
+    flex-direction: column;
+  }
+  .footerUpper{
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .box {
+    width: 60%;
+  }
 }
